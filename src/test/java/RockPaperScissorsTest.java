@@ -13,8 +13,16 @@ public class RockPaperScissorsTest {
     }
 
     @Test
+    public void p1_Rock_p2_Scissors() {
+        RPS result = rockPaperScissors.play(RPS.ROCK, RPS.SCISSORS);
+
+
+        assertThat(result, equalTo(RPS.P1_WINS));
+    }
+
+    @Test
     public void p1_Rock_p2_Paper() {
-        RPS result = rockPaperScissors.result(RPS.ROCK, RPS.PAPER);
+        RPS result = rockPaperScissors.play(RPS.ROCK, RPS.PAPER);
 
 
         assertThat(result, equalTo(RPS.P2_WINS));

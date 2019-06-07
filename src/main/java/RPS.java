@@ -4,5 +4,5 @@ public enum RPS {
     SCISSORS,
     P1_WINS,
     P2_WINS,
-    TIE
+    DRAW
 }
